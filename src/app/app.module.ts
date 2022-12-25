@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TwButtonDirective } from './tw-button.directive';
+import {TwRaisedButtonDirective} from "./tw-raised-button.directive";
+import {TwRoundButtonDirective} from "./tw-round-button.directive";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TwButtonDirective
-  ],
+    declarations: [
+        AppComponent,
+
+    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TwButtonDirective,
+    TwRoundButtonDirective,
+    TwRaisedButtonDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
